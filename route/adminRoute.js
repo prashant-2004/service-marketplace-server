@@ -9,10 +9,7 @@ require("../db/conn");
 const Admin = require("../model/adminSchema");
 
 router.use(
-  cors({
-    origin: "http://localhost:3000",
-    credentials: true,
-  })
+  cors()
 );
 
 router.get("/", (req, res) => {
